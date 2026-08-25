@@ -27,5 +27,16 @@ btnGravador.addEventListener('pointerdown', iniciarGravacao);
 btnGravador.addEventListener('pointerup', pararGravacao);
 //pointerup evento dispara  para o instante que a tela é solta
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./pwabuilder-sw.js')
+               .then(() => {
+                      console.log('Service Worker registrado com sucesso!');
+               })
+               .catch(error => {
+                      console.error('Erro ao registrar o Service Worker:', error);
+               });
+    });
+}
 
 
