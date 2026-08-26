@@ -1,0 +1,60 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Gravador",
+  "orientation": "portrait",
+  "scope": "/",
+  "short_name": "Gravador",
+  "start_url": "/gravad-api-web",
+  "theme_color": "#ffffff",
+  "description": "Gravador - simule a sua gravação",
+  "lang": "pt",
+  "icons": [
+    {
+      "src": "icons/64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    } , 
+    {
+      "src": "icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+      ,{
+      "src": "icons/256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+      ,{
+      "src": "icons/512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }  
+    
+  ] ,
+ "screenshots": [
+      {
+           "src": "/gravad-api-web/screenshots/inicio.png",
+           "sizes": "1080x1920",
+           "type": "image/png",
+           "form_factor": "narrow"
+      },
+      {
+           "src": "/gravad-api-web/screenshots/filme.png",
+           "sizes": "1080x1920",
+           "type": "image/png",
+           "form_factor": "narrow"
+      }
+  ]
+}
