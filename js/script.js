@@ -1,12 +1,13 @@
-// 1. Declaração das variáveis de interface
+//  Declaração das variáveis de interface
 const btnGravador = document.getElementById('btn-gravador');
 const statusGravacao = document.getElementById('status-gravacao');
+const playerAudio = document.getElementById('player-audio');
 
-// 2. Variáveis para gerenciar o microfone
+// Variáveis para gerenciar o microfone
 let mediaRecorder;
 let audioChunks = [];
 
-// 3. Inicializa a permissão do microfone ao carregar a página
+//  Inicializa a permissão do microfone ao carregar a página
 async function inicializarMicrofone() {
   //pede solicita permissão ao navegador usar o microfone 
   try {
@@ -28,9 +29,11 @@ async function inicializarMicrofone() {
       // endereço temporário para o áudio
       const audioUrl = URL.createObjectURL(audioBlob);
       
-      // Reproduz o som gravado
-      const audio = new Audio(audioUrl);
-      audio.play();
+    // Envia o áudio para o player HTML e toca automaticamente
+      if (playerAudio) { //está sendo executado
+      playerAudio.src = audioUrl; //colocando o endereço audioURL
+        playerAudio.play(); // o audio
+      }
 
       statusGravacao.textContent = 'Status: Gravação concluída e tocando!';
     };
@@ -96,3 +99,4 @@ if ('serviceWorker' in navigator) {
 
 // 8. Ativa o microfone assim que a página abre
 inicializarMicrofone();
+
