@@ -1,27 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Gravador de Áudio</title>
-    <link rel="stylesheet" href="css/style.css">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meu Disney</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Fonte para o título -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
-    <div class="container-gravador">
-        
-        <button id="btn-gravador">
-             Clique e Segure para Gravar
+<header>
+    <h1>Meu Disney</h1>
+
+    <p id="mensagem">0 personagens carregados</p>
+</header>
+
+
+<main>
+
+    <section id="container" class="container">
+        <!-- Os cards serão criados pelo JavaScript -->
+    </section>
+
+
+    <div class="controles">
+
+        <button id="botaoCarregar">
+            CARREGAR MAIS
         </button>
 
-
-        <p id="status-gravacao">
-            Status: Pronto para gravar
-        </p>
+        <p id="pagina">Página 1</p>
 
     </div>
 
-    <script src="js/script.js"></script>
+</main>
+
+
+<script src="js/script.js"></script>
 
 </body>
+
 </html>
